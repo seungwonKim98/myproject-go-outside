@@ -47,7 +47,8 @@ public class App {
 
 
     while(true){
-      System.out.print("명령> ");
+      System.out.println("명령어 = /member/add, /member/list, /notice/add, /notice/list, /review/add, /review/list");
+      System.out.print("명령어>");
       String input = keyboardScan.nextLine();
 
       if(input.equalsIgnoreCase("quit") || input.equalsIgnoreCase("exit")) {
