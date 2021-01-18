@@ -108,8 +108,7 @@ public class App {
         System.out.print("암호? ");
         npassword[nsize] = keyboardScan.nextLine();
 
-        System.out.print("작성일? ");
-        noticeDate[nsize] = Date.valueOf(keyboardScan.nextLine());
+        noticeDate[size] = new java.sql.Date(System.currentTimeMillis());
 
         nsize++;
 
@@ -144,8 +143,7 @@ public class App {
         System.out.print("작성자? ");
         rname[csize] = keyboardScan.nextLine();
 
-        System.out.print("작성일? ");
-        reviewDate[csize] = Date.valueOf(keyboardScan.nextLine());
+        reviewDate[size] = new java.sql.Date(System.currentTimeMillis());
 
         System.out.println("모험상태?");
         System.out.println("0: 모험실패");
