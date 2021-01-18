@@ -42,7 +42,7 @@ public class App {
     Date[] reviewDate = new Date[LENGTH]; // 작성일
     int[] rstatus = new int[LENGTH]; //  모험 상태 
 
-    int csize = 0;
+    int rsize = 0;
 
 
 
@@ -109,7 +109,7 @@ public class App {
         System.out.print("암호? ");
         npassword[nsize] = keyboardScan.nextLine();
 
-        noticeDate[size] = new java.sql.Date(System.currentTimeMillis());
+        noticeDate[nsize] = new java.sql.Date(System.currentTimeMillis());
 
         nsize++;
 
@@ -127,40 +127,40 @@ public class App {
         System.out.println("[리뷰 등록]");
 
         System.out.print("번호? ");
-        rno[csize] = Integer.parseInt(keyboardScan.nextLine());
+        rno[rsize] = Integer.parseInt(keyboardScan.nextLine());
 
         System.out.print("평점? ");
-        rstars[csize] = Integer.parseInt(keyboardScan.nextLine());
+        rstars[rsize] = Integer.parseInt(keyboardScan.nextLine());
 
         System.out.print("제목? ");
-        rtitle[csize] = keyboardScan.nextLine();
+        rtitle[rsize] = keyboardScan.nextLine();
 
         System.out.print("내용? ");
-        rcontent[csize] = keyboardScan.nextLine();
+        rcontent[rsize] = keyboardScan.nextLine();
 
         System.out.print("암호? ");
-        rpassword[csize] = keyboardScan.nextLine();
+        rpassword[rsize] = keyboardScan.nextLine();
 
         System.out.print("작성자? ");
-        rname[csize] = keyboardScan.nextLine();
+        rname[rsize] = keyboardScan.nextLine();
 
-        reviewDate[size] = new java.sql.Date(System.currentTimeMillis());
+        reviewDate[rsize] = new java.sql.Date(System.currentTimeMillis());
 
         System.out.println("모험상태?");
         System.out.println("0: 모험실패");
         System.out.println("1: 모험중");
         System.out.println("2: 모험완료");
         System.out.print("> ");
-        rstatus[csize] = Integer.valueOf(keyboardScan.nextLine());
+        rstatus[rsize] = Integer.valueOf(keyboardScan.nextLine());
 
-        csize++;
+        rsize++;
 
       }else if(input.equalsIgnoreCase("/review/list")) {
         System.out.println();
         System.out.println("[리뷰 목록]");
 
 
-        for (int i = 0; i < csize; i++) {
+        for (int i = 0; i < rsize; i++) {
           String stateLabel = null;
           switch (rstatus[i]) {
             case 1:
