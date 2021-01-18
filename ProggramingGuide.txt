@@ -1,0 +1,47 @@
+[Go outside]
+
+please select number (ex/ 1)
+↓[@ If you don't know how to use it, please check the manual first.]
+
+[1] helpManual
+
+┌----------------------------------------------------------------------------┐
+  If you want to use this program, you have to select the number of the   menu. 
+
+  If you enter a different value than the number of the menu, you will be   prompted to check and re-enter. 
+
+  Enter "exit or quit" to exit the program.
+  ------------------------------------------------------------------------------
+
+  >signUp 
+     >[sign Up] - sing Up.
+     >[List of members] - view member list.
+
+  >memberMenu 
+     >[Create a posts] - Only create member posts.
+     >[View posts] - Only view member posts.
+
+  >Non-memberMenu 
+     >[Create a posts] - Only create Non-member posts.
+     >[View posts] - Only view Non-member posts.
+
+└----------------------------------------------------------------------------┘
+
+
+
+
+[2] signUp
+  >[1] signUp 
+  >[2] List of members  
+
+
+[3] memberMenu
+  >[1] Create a posts
+  >[2] View posts
+
+
+[4] Non-memberMenu
+  >[1] Create a posts
+  >[2] View posts
+
+
