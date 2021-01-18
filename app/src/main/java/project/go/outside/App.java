@@ -1,4 +1,4 @@
-package myproject.gooutside;
+package project.go.outside;
 
 import java.sql.Date;
 import java.util.Scanner;

@@ -1,10 +1,10 @@
-package myproject.gooutside;
+package project.go.outside;
 
 import java.sql.Date;
 import java.util.Scanner;
 
 
-public class App {
+public class AppTest {
 
   public static void main(String[] args) {
     Scanner keyboardScan = new Scanner(System.in);
