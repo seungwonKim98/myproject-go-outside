@@ -51,11 +51,12 @@ public class App {
       String input = keyboardScan.nextLine();
 
       if(input.equalsIgnoreCase("quit") || input.equalsIgnoreCase("exit")) {
+        System.out.println();
         System.out.println("사용해주셔서 감사합니다.");
         break;
 
       }else if(input.equalsIgnoreCase("/member/add")) {
-
+        System.out.println();
         System.out.println("[회원 등록]");
 
         System.out.print("번호? ");
@@ -84,11 +85,12 @@ public class App {
 
         for (int i = 0; i < size; i++) {
           // 번호, 이름, 국가, 이메일, 전화, 가입일
-          System.out.printf("%d, %s, %s, %s, %s, %s\n", // 출력 형식 지정
+          System.out.printf("[%d], 이름 : %s, 국가 : %s, 이메일 : %s, 번호 : %s, 가입일 : %s\n", // 출력 형식 지정
               no[i], name[i], country[i], email[i], tel[i], registeredDate[i]);
         }
 
       }else if(input.equalsIgnoreCase("/notice/add")){
+        System.out.println();
         System.out.println("[공지 등록]");
 
         System.out.print("번호? ");
@@ -112,14 +114,16 @@ public class App {
         nsize++;
 
       }else if(input.equalsIgnoreCase("/notice/list")) {
+        System.out.println();
         System.out.println("[공지 목록]");
 
         for (int i = 0; i < nsize; i++) {
-          System.out.printf("%d, %s, %s, %s, %s\n", // 출력 형식 지정
+          System.out.printf("[%d], 제목 : %s, 내용 : %s, 작성자 : %s, 작성일 : %s\n", // 출력 형식 지정
               nno[i], ntitle[i], ncontent[i], nname[i], noticeDate[i]);
         }
 
       }else if(input.equalsIgnoreCase("/review/add")) {
+        System.out.println();
         System.out.println("[리뷰 등록]");
 
         System.out.print("번호? ");
@@ -127,8 +131,6 @@ public class App {
 
         System.out.print("평점? ");
         rstars[csize] = Integer.parseInt(keyboardScan.nextLine());
-
-        keyboardScan.nextLine();
 
         System.out.print("제목? ");
         rtitle[csize] = keyboardScan.nextLine();
@@ -155,6 +157,7 @@ public class App {
         csize++;
 
       }else if(input.equalsIgnoreCase("/review/list")) {
+        System.out.println();
         System.out.println("[리뷰 목록]");
 
 
@@ -171,7 +174,7 @@ public class App {
               stateLabel = "모험완료";
           }
           // 글 번호, 평점, 제목, 내용, 작성자, 작성일, 모험상태 
-          System.out.printf("%d, %d, %s, %s, %s, %s, %s\n", // 출력 형식 지정
+          System.out.printf("[%d],평점 : %d, 제목 : %s, 내용: %s, 작성자 : %s, 작성일 : %s, %s\n", // 출력 형식 지정
               rno[i], rstars[i], rtitle[i], rcontent[i], rname[i], reviewDate[i], stateLabel);
         }
 
