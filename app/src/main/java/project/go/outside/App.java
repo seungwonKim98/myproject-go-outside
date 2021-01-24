@@ -9,6 +9,10 @@ public class App {
 
   public static void main(String[] args) {
 
+    MemberHandler member = new MemberHandler();
+    NoticeHandler notice = new NoticeHandler();
+    ReviewHandler review = new ReviewHandler();
+
 
     while(true){
       System.out.println("명령어 = /member/add, /member/list, /notice/add, /notice/list, /review/add, /review/list");
@@ -21,26 +25,26 @@ public class App {
 
       }else if(command.equalsIgnoreCase("/member/add")) {
         System.out.println();
-        MemberHandler.add();
+        member.add();
 
       }else if(command.equalsIgnoreCase("/member/list")) {
         System.out.println();
-        MemberHandler.list();
+        member.list();
       }else if(command.equalsIgnoreCase("/notice/add")){
         System.out.println();
-        NoticeHandler.add();
+        notice.add();
 
       }else if(command.equalsIgnoreCase("/notice/list")) {
         System.out.println();
-        NoticeHandler.list();
+        notice.list();
 
       }else if(command.equalsIgnoreCase("/review/add")) {
         System.out.println();
-        ReviewHandler.add();
+        review.add();
 
       }else if(command.equalsIgnoreCase("/review/list")) {
         System.out.println();
-        ReviewHandler.list();
+        review.list();
 
 
       }else {

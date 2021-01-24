@@ -1,27 +1,18 @@
 package project.handler;
 
-import java.sql.Date;
+import project.go.outside.domain.Review;
 import project.util.Prompt;
 
 public class ReviewHandler {
 
-  static class Review{
-    int no; // 게시글 번호
-    int stars; // 평점
-    String title; // 제목
-    String content; // 게시글 내용
-    String password; // 암호
-    String name; // 작성자 
-    Date reviewDate; // 작성일
-    int status; //  모험 상태 
-  }
+
 
   // 후기 데이터 review
   static final int LENGTH = 100;
-  static Review[] review = new Review[LENGTH];
-  static int size = 0;
+  Review[] review = new Review[LENGTH];
+  int size = 0;
 
-  public static void add() {
+  public void add() {
     System.out.println("[리뷰 등록]");
 
     Review r = new Review();
@@ -35,14 +26,14 @@ public class ReviewHandler {
     r.reviewDate = new java.sql.Date(System.currentTimeMillis());
     r.status = Prompt.inputInt("모험상태?\n0: 모험실패\n1: 모험중\n2: 모험완료\n> ");
 
-    review[size++] = r;
+    this.review[this.size++] = r;
   }
 
-  public static void list() {
+  public void list() {
     System.out.println("[리뷰 목록]");
 
-    for (int i = 0; i < size; i++) {
-      Review r = review[i];
+    for (int i = 0; i < this.size; i++) {
+      Review r = this.review[i];
       String stateLabel = null;
       switch (r.status) {
         case 1:
