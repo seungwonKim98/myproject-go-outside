@@ -1,0 +1,35 @@
+
+    // 회원 데이터
+    final int LENGTH = 100;
+    int[] no = new int[LENGTH]; // 회원 번호 
+    String[] name = new String[LENGTH]; // 회원 이름
+    String[] email = new String[LENGTH]; // 이메일
+    String[] password = new String[LENGTH]; // 비밀 번호
+    String[] tel = new String[LENGTH]; // 전화 번호
+    Date[] registeredDate = new Date[LENGTH]; // 가입일
+    int size = 0;
+
+// member add/ list
+
+회원 번호/ 이름/ 이메일/ 비밀번호/ 전화번호/ 가입일
+
+--------------------------
+
+// notice add/ list
+
+번호 / 제목 / 내용 / 작성자 / 작성일 
+
+---------------------------
+// review add/ list
+
+번호 / 장소 / 내용 / 암호 / 작성자 /작성일 /평점
+
+
+
+ 
+
+
+
+
+
+

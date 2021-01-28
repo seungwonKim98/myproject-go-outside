@@ -12,7 +12,7 @@ public class NoticeHandler {
   int size = 0;
 
   public void add() {
-    System.out.println("[공지 등록]");
+    System.out.println("[회원 게시글 작성]");
     Notice n = new Notice();
 
     n.no = Prompt.inputInt("번호? ");
@@ -26,7 +26,7 @@ public class NoticeHandler {
   }
 
   public void list() {
-    System.out.println("[공지 목록]");
+    System.out.println("[회원 게시글 목록]");
 
     for (int i = 0; i < this.size; i++) {
       Notice n = this.notice[i];
