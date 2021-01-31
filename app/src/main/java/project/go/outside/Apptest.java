@@ -1,4 +1,6 @@
+/*
 package project.go.outside;
+
 
 import project.handler.MemberHandler;
 import project.handler.NoticeHandler;
@@ -59,4 +61,5 @@ public class Apptest {
   }
 }
 
+ */
 

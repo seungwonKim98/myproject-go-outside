@@ -2,7 +2,7 @@ package project.go.outside.domain;
 
 import java.sql.Date;
 
-public class Member {
+public class User {
 
   public int no; // 회원 번호 
   public String name; // 회원 이름

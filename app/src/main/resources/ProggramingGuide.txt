@@ -1,3 +1,7 @@
+java -cp app/build/classes/java/main  project.go.outside.App
+
+
+
 [Go outside]
 
 please select number (ex/ 1)
@@ -13,18 +17,21 @@ please select number (ex/ 1)
   Enter "exit or quit" to exit the program.
   ------------------------------------------------------------------------------
 
-  >signUp 
+  >[signUp] 
      >[sign Up] - sing Up.
      >[List of members] - view member list.
 
-  >memberMenu 
+  >[memberMenu] 
      >[Create a posts] - Only create member posts.
      >[View posts] - Only view member posts.
 
-  >Non-memberMenu 
+  >[Non-memberMenu] 
      >[Create a posts] - Only create Non-member posts.
      >[View posts] - Only view Non-member posts.
 
+   >[admin]
+Menu for administrators only.
+You can access data from any menu.
 └----------------------------------------------------------------------------┘
 
 

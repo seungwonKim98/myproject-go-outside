@@ -9,8 +9,9 @@ public class Review {
   public String title; // 제목
   public String content; // 게시글 내용
   public String password; // 암호
-  public String name; // 작성자 
-  public Date reviewDate; // 작성일
-  public int status; //  모험 상태 
+  public String writer; // 작성자 
+  public Date registeredDate; // 작성일
+  public int viewCount; // 조회수
+  public int like; // 좋아요
 
 }
